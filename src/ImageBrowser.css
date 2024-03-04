@@ -1,0 +1,62 @@
+.thumbnail-container {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  .thumbnail.active {
+    opacity: 1;
+  }
+  
+  .thumbnail img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .navigation-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  .navigation-icon {
+    color: whitesmoke;
+    font-size: 100px;
+  }
+
+  .main-image-container {
+    position: relative;
+    display: inline-block; /* Or 'block' depending on your layout */
+  }
+  
+  .navigation-icon.left {
+    left: 10px; /* Adjust as necessary */
+  }
+  
+  .navigation-icon.right {
+    right: 10px; /* Adjust as necessary */
+  }
+  
+  /* Ensure the arrows are visible against the image background */
+  .navigation-icon:hover {
+    color: #007bff;
+  }
